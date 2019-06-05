@@ -1,0 +1,57 @@
+body {
+    background: blue;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+    padding: 15px;
+}
+
+#textbody {
+    background: yellow;
+    font-size: 20px;
+    padding: 15px;
+}
+
+p {
+    padding: 10px;
+}
+
+#crystals {
+    padding: 15px;
+}
+
+#numberdisplay {
+    width: 400px;
+    height:100px;
+    background: yellow;
+    margin-top: 15px;
+    display: flex;
+}
+
+#winslosses {
+    width: 300px;
+    height: 100px;
+    background:yellow;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#scoreside {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#scorehead {
+    width: 600px;
+    height: 100px;
+    background: yellow;
+}
+
+#livescore {
+    width: 600px;
+    height: 200px;
+    background: yellow;
+    margin-top: 15px;
+}
