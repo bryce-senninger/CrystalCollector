@@ -62,6 +62,7 @@ button {
     width: 600px;
     height: 100px;
     background: yellow;
+    padding-left: 150px;
 }
 
 h3 {
