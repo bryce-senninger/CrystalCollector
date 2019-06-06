@@ -28,11 +28,13 @@ function checkIfEnded() {
         wins++;
         $("#wins").html("Wins: " + wins);
         startGame();
+        winEffect();
     } else if (computerGuess < liveScore) {
         $("#message").html("You lose!");
         losses++
         $("#losses").html("Losses: " + losses);
         startGame();
+        loseEffect();
     }
 }
 
@@ -41,24 +43,28 @@ $("#purp").on("click", function() {
     $("#live").html(liveScore);
     $("#message").html("Keep guessing!");
     checkIfEnded();
+    chooseEffect();
 });
 $("#white").on("click", function() {
     liveScore += whiteCrys;
     $("#live").html(liveScore);
     $("#message").html("Keep guessing!");
     checkIfEnded();
+    chooseEffect();
 });
 $("#red").on("click", function() {
     liveScore += redCrys;
     $("#live").html(liveScore);
     $("#message").html("Keep guessing!");
     checkIfEnded();
+    chooseEffect();
 });
 $("#blue").on("click", function() {
     liveScore += blueCrys;
     $("#live").html(liveScore);
     $("#message").html("Keep guessing!");
     checkIfEnded();
+    chooseEffect();
 });   
 
 function playAudio() {
@@ -70,3 +76,23 @@ function pauseAudio() {
     let music = document.getElementById("myAudio");
     music.pause();
 }
+
+function chooseEffect() {
+    let chooseEffect = document.getElementById("chooseEffect");
+    chooseEffect.play();
+}
+
+function winEffect() {
+    var winEffect = document.getElementById("winEffect");
+    winEffect.play();
+}
+
+
+
+function loseEffect() {
+    var loEffect = document.getElementById("loseEffect");
+    loEffect.play();
+}
+
+
+

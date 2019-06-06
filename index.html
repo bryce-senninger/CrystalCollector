@@ -12,7 +12,16 @@
 <body>
     <audio id="myAudio">
         <source src="assets/music/Soothing Relaxation - Relaxing Celtic Music ★86 (30 Minutes).mp3">
-    </audio> 
+    </audio>
+    <audio id="chooseEffect">
+        <source src="assets/music/Ting-Popup_Pixels-349896185.wav">
+    </audio>
+    <audio id="winEffect">
+        <source src="assets/music/Music_Box-Big_Daddy-1389738694.wav">
+    </audio>
+    <audio id="loseEffect">
+        <source src="assets/javascript/loEffect.wav">
+    </audio>
     <div id=container>
         <div id=header>
             <h1>Crystal Collector!</h1>
@@ -36,7 +45,7 @@
                 <P id=losses>Losses:</P>
             </div>
         </div>
-        <div id=crystals>
+        <div id=crystals onclick="chooseEffect()">
             <img id=purp src="assets/images/firefox_M9pwCblyJU.png">
             <img id=white src="assets/images/firefox_VUxvWkm7xc.png">
             <img id=red src="assets/images/firefox_nxHA0pDUXN.png">
