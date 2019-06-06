@@ -26,12 +26,18 @@ p {
     padding: 15px;
 }
 
+h2 {
+    font-size: 50px;
+    padding-top: 25px;
+}
+
 #numberdisplay {
     width: 400px;
     height:100px;
     background: yellow;
     margin-top: 15px;
     display: flex;
+    justify-content: center;
 }
 
 #winslosses {
@@ -41,6 +47,11 @@ p {
     margin-top: 15px;
     margin-left: 15px;
 }
+
+button {
+    margin-bottom: 5px;
+}
+
 
 #scoreside {
     display: inline-flex;
@@ -53,11 +64,18 @@ p {
     background: yellow;
 }
 
+h3 {
+    padding-top: 35px;
+    font-size: 30px;
+}
+
 #livescore {
     width: 600px;
     height: 200px;
     background: yellow;
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 #container {
@@ -67,4 +85,9 @@ p {
     display: flex;
     flex-direction: column;
     margin: auto;
+}
+
+#live {
+    font-size: 100px;
+    padding-top: 60px;
 }

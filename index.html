@@ -10,10 +10,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <audio id="myAudio">
+        <source src="assets/music/Soothing Relaxation - Relaxing Celtic Music ★86 (30 Minutes).mp3">
+    </audio> 
     <div id=container>
         <div id=header>
             <h1>Crystal Collector!</h1>
         </div>
+        <button id=play onclick="playAudio()" type="button">Play Music</button>
+        <button id=pause onclick="pauseAudio()" type="button">Pause Music</button> 
         <div id=textbody>
             <p>You will be given a random number at the start of the game.</p>
             <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
@@ -23,10 +28,12 @@
         </div>
         <div id=scoreside>
             <div id=numberdisplay>
-                    <h2></h2>
+                <h2 id=compGuess>32</h2>
             </div>
             <div id=winslosses>
-            
+                <p id=message></p>
+                <p id=wins>Wins: </p>
+                <P id=losses>Losses:</P>
             </div>
         </div>
         <div id=crystals>
@@ -37,10 +44,10 @@
 
         </div>
         <div id=scorehead>
-            <h3></h3>
+            <h3>Your total score is:</h3>
         </div>
         <div id=livescore>
-            <h2></h2>
+            <h3 id=live>0</h3>
 
         </div>
     </div>
